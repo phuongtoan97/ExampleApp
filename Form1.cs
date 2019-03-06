@@ -16,5 +16,16 @@ namespace demo
 		//new branch
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtA.Text))
+            {
+                double a = double.Parse(txtA.Text);
+                double b = double.Parse(txtB.Text);
+                double c = a - b;
+                txtKetQua.Text = c.ToString();
+            }
+        }
     }
 }
